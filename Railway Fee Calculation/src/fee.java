@@ -87,12 +87,13 @@ public class fee {
 		
 		else
 		{
+			int quantity;
 			if(ageGroup == 4 || ageGroup == 1)
 			{
-				return basePrice/2;
+				return (basePrice/2)*quantity;
 			}
 			
-			return basePrice;
+			return basePrice*quantity;
 		}
 	}
 
@@ -165,5 +166,5 @@ public class fee {
 	public static int getMethod()
 	{
 		return method;
-	}
+	} 
 }
